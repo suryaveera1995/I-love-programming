@@ -1,6 +1,7 @@
 package com.niit.zonn.model;
 
 import javax.persistence.Column;
+
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;

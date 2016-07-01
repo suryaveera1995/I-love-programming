@@ -30,7 +30,9 @@ http://www.springframework.org/schema/security/spring-security-4.0.xsd">
     <property name="annotatedClasses">
             <list>
                 <value>com.niit.zonn.model.SignupModel</value>
-                
+                <value>com.niit.zonn.model.ProductModel</value>
+                <value>com.niit.zonn.model.CategoryModel</value>
+                <value>com.niit.zonn.model.SupplierModel</value>
             </list>
     </property>
 </bean>
