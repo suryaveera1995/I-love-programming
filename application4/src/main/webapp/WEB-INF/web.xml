@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+
+<web-app version="3.0" id="WebApp_ID" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+<display-name>Archetype Created Web Application</display-name>
+
+
+<servlet>
+
+<servlet-name>dispatcher</servlet-name>
+
+<servlet-class> org.springframework.web.servlet.DispatcherServlet </servlet-class>
+
+<load-on-startup>1</load-on-startup>
+
+<!-- priority as first -->
+
+
+</servlet>
+
+
+<servlet-mapping>
+
+<servlet-name>dispatcher</servlet-name>
+
+<!-- xml name must be dispatcher-servlet.xml -->
+
+
+<url-pattern>/</url-pattern>
+
+</servlet-mapping>
+
+
+<context-param>
+
+<param-name>contextConfigLocation</param-name>
+
+<param-value>/WEB-INF/applicationContext.xml</param-value>
+
+</context-param>
+
+
+<listener>
+
+<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+
+</listener>
+
+</web-app>
